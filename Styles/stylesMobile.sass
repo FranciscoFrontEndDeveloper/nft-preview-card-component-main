@@ -1,57 +1,90 @@
 
 @use './styles' as *
+
+body
+  font-family: 'Outfit', sans-serif
 .containerMain
- background: $Verydarkblue1
- width: 100%
- height: 100vh
- display: grid
- grid-template-columns: auto
- grid-template-rows: 90% auto
- justify-items: center
- align-items: center
+  background: $Verydarkblue1
+  width: 100%
+  height: 100vh
+  display: grid
+  grid-template-columns: auto
+  grid-template-rows: 90% auto
+  justify-items: center
+  align-items: center
 
 .containerMain__Card
- width: 80%
- box-shadow: 1px solid #fff
- height: 90%
- background: $Verydarkblue2
- border-radius: 10px
- display: grid
- grid-template-rows: auto 10% 10% auto auto
- padding: 20px
- align-items: center
+  width: 18.75rem
+  height: 90%
+  background: $Verydarkblue2
+  border-radius: 10px
+  display: grid
+  grid-template-rows: auto 10% 10% auto auto
+  padding: 20px
+  align-items: center
 
 .containerMain__Card--image
- width: 100%
- height: auto
- overflow: hidden
- border-radius: 8px
+  width: 100%
+  height: auto
+  overflow: hidden
+  border-radius: 8px
 h1
- color: $White
+  color: $White
+  font-size: 1.5em
 p
- color: $Verydarkblue3
+  color: $Softblue
+  font-size: 18px
+  line-height: 26px
 
 .priceEth
- display: flex
- flex-direction: row
- justify-content: space-between
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-content: center
+img:nth-child(1)
+  flex: 0 1 auto
+span:nth-child(2)
+  color: $Cyan
+  flex:  1 auto
+  padding-left: 10px
+img:nth-child(3)
+  flex: 0 1 auto
+span:nth-child(4)
+  padding-left: 10px
+  color: $Softblue
+  flex: 0 1 auto
 
 .imageUser
- display: flex
- flex-direction: row
- justify-items: around
- align-items: center
- border-top: 1px solid $Verydarkblue3
- padding-top: 1em
- picture
-  flex: 1
-  img
-   width: 70%
-   border: 1px solid $White
-   border-radius: 50%
-   overflow: hidden
- span
-  flex: 6
-  color: $Verydarkblue3
-  strong
-   color: $White
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  border-top: 1px solid $Verydarkblue3
+  padding-top: 10px
+  picture
+    flex: 1
+    img
+      width: 70%
+      border: 1px solid $White
+      border-radius: 50%
+      overflow: hidden
+  span
+    flex: 6
+    color: $Softblue
+    strong
+      color: $White
+
+.attribution
+  display: grid
+  justify-items: center
+  background: #000
+  width: 100%
+  p
+    color: #fff
+    text-align: center
+  a
+    color: #FF3F00
+    text-transform: capitalize
+    text-decoration: none
+  &:hover
+    text-decoration: underline
