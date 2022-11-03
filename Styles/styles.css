@@ -1,1 +1,148 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.containerMain {
+  background: hsl(217deg, 54%, 11%);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 90% auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.overImage {
+  background: hsl(178deg, 100%, 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.overImage img {
+  width: 20%;
+  height: 20%;
+}
+
+.containerMain__Card {
+  max-width: 18.75rem;
+  max-height: 90%;
+  background: hsl(216deg, 50%, 16%);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: auto 10% 10% auto auto;
+  padding: 20px;
+  align-items: center;
+  row-gap: 2em;
+}
+.containerMain__Card picture {
+  position: relative;
+}
+.containerMain__Card picture:hover .overImage {
+  opacity: 0.5;
+}
+
+.containerMain__Card--image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5em;
+}
+h1:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+p {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.priceEth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+img:nth-child(1) {
+  flex: 0 1 auto;
+}
+
+span:nth-child(2) {
+  color: hsl(178deg, 100%, 50%);
+  flex: 1 auto;
+  padding-left: 10px;
+}
+
+img:nth-child(3) {
+  flex: 0 1 auto;
+}
+
+span:nth-child(4) {
+  padding-left: 10px;
+  color: hsl(215deg, 51%, 70%);
+  flex: 0 1 auto;
+}
+
+.imageUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  padding-top: 10px;
+}
+.imageUser picture {
+  flex: 1;
+}
+.imageUser picture img {
+  width: 70%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imageUser span {
+  flex: 6;
+  color: hsl(215deg, 51%, 70%);
+}
+.imageUser span strong {
+  color: hsl(0deg, 0%, 100%);
+}
+.imageUser span strong:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.attribution {
+  display: grid;
+  justify-items: center;
+  background: #000;
+  width: 100%;
+}
+.attribution p {
+  color: #fff;
+  text-align: center;
+}
+.attribution a {
+  color: #FF3F00;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.attribution:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
