@@ -13,15 +13,43 @@ body {
   align-items: center;
 }
 
+.overImage {
+  background: hsl(178deg, 100%, 50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.overImage img {
+  width: 20%;
+  height: 20%;
+}
+
 .containerMain__Card {
-  width: 18.75rem;
-  height: 90%;
+  max-width: 18.75rem;
+  max-height: 90%;
   background: hsl(216deg, 50%, 16%);
   border-radius: 10px;
   display: grid;
   grid-template-rows: auto 10% 10% auto auto;
   padding: 20px;
   align-items: center;
+  row-gap: 2em;
+}
+.containerMain__Card picture {
+  position: relative;
+}
+.containerMain__Card picture:hover .overImage {
+  opacity: 0.5;
 }
 
 .containerMain__Card--image {
@@ -34,6 +62,9 @@ body {
 h1 {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.5em;
+}
+h1:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 
 p {
@@ -92,6 +123,9 @@ span:nth-child(4) {
 }
 .imageUser span strong {
   color: hsl(0deg, 0%, 100%);
+}
+.imageUser span strong:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 
 .attribution {

@@ -13,15 +13,40 @@ body
   justify-items: center
   align-items: center
 
+.overImage
+  background: $Cyan
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 300px
+  height: 300px
+  opacity: 0
+  transition: .5s ease
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 10px
+  img
+    width: 20%
+    height: 20%
+
 .containerMain__Card
-  width: 18.75rem
-  height: 90%
+  max-width: 18.75rem
+  max-height: 90%
   background: $Verydarkblue2
   border-radius: 10px
   display: grid
   grid-template-rows: auto 10% 10% auto auto
   padding: 20px
   align-items: center
+  row-gap: 2em
+  picture
+    position: relative
+    &:hover
+      .overImage
+        opacity: 0.5
 
 .containerMain__Card--image
   width: 100%
@@ -31,6 +56,8 @@ body
 h1
   color: $White
   font-size: 1.5em
+  &:hover
+    color: $Cyan
 p
   color: $Softblue
   font-size: 18px
@@ -45,7 +72,7 @@ img:nth-child(1)
   flex: 0 1 auto
 span:nth-child(2)
   color: $Cyan
-  flex:  1 auto
+  flex: 1 auto
   padding-left: 10px
 img:nth-child(3)
   flex: 0 1 auto
@@ -73,6 +100,8 @@ span:nth-child(4)
     color: $Softblue
     strong
       color: $White
+      &:hover
+        color: $Cyan
 
 .attribution
   display: grid
